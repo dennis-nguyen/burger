@@ -4,7 +4,7 @@ const methodOverride = require("method-override");
 const exphbs = require("express-handlebars");
 let routes = require("./controllers/burgers_controllers.js");
 
-let port = 3000;
+let PORT = process.env.PORT || 3000;
 
 let app = express();
 
